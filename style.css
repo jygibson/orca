@@ -10,17 +10,54 @@ body {
     text-align: center;
 }
 
+.members-btn{
+    margin-left: 810px;
+}
+
+.learn-more-btn {
+    color: gold;
+}
+
+.program-header{
+    color:gold;
+    font-family: 'Roboto', Sans-Serif;
+}
+.programs-intro {
+    Font-Family: 'Droid Serif', Serif;
+    color:darkgray;
+}
+
+.card{
+    border: .4px;
+    border-style: solid;
+    border-color: gold;
+}
+
+.card-title{
+    color:gold;
+    font-family: 'Roboto', Sans-Serif;
+}
+
+.card-subtitle{
+    font-family: 'Roboto', Sans-Serif;
+}
+
+.card-text{
+    Font-Family: 'Droid Serif', Serif;
+    color: darkgray;
+}
+
 #orca-title {
     font-family: 'Roboto', Sans-Serif;
     font-size: 35px;
-    color: white;
+    color: gold;
 }
 
 #orca-subtitle {
     font-family: 'Roboto', Sans-Serif;
     font-size: 26px;
-    color: white;
-    font-style: italic;
+    font-style: 'thin';
+    color: darkgrey
 }
 
 #crest {
@@ -34,5 +71,10 @@ body {
 .about {
     Font-Family: 'Droid Serif', Serif;
     Font-Size: 15px;
-    color: white;
+    color: whitesmoke;
+}
+
+.contact-header {
+    font-family: 'Roboto', Sans-Serif;
+    color: gold;
 }
