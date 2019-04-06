@@ -18,6 +18,12 @@ body {
     color: gold;
 }
 
+.col-10{
+    background-color: #343a40;
+    border: .4px;
+    border-style: solid;
+    border-color: gold;
+}
 .program-header{
     color:gold;
     font-family: 'Roboto', Sans-Serif;
