@@ -50,78 +50,78 @@
         <div class="row"><br></div>
         <div class="row justify-content-center">
             <div class="col-9">
-            <form>
-                <div class="form-group row">
-                    <label for="inputName" class="col-sm-2 col-form-label text">Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label name">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label text">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="rower@rowing.com">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label email">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="rower@rowing.com">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputPhone" class="col-sm-2 col-form-label text">Phone Number</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputPhone" placeholder="(703)867-5309">
+                    <div class="form-group row">
+                        <label for="inputPhone" class="col-sm-2 col-form-label phone">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="(703)867-5309">
+                        </div>
                     </div>
-                </div>
-                <fieldset class="form-group">
-                    <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0 text">Program</legend>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0 text">Program</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="Veteran">
+                                    <label class="form-check-label text" for="gridRadios1">
+                                        Veteran Program ($35.00/month)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="Masters">
+                                    <label class="form-check-label text" for="gridRadios2">
+                                        Masters Program ($50.00/month)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                        value="nonVetAdaptive">
+                                    <label class="form-check-label text" for="gridRadios3">
+                                        Non-Veteran Adaptive ($50.00/month)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label for="inputdisability" class="col-sm-2 col-form-label text">Type of Disability, if
+                            applicable</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="disability" placeholder="ex. double amputee">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 text">Waiver</div>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                    value="option1">
-                                <label class="form-check-label text" for="gridRadios1">
-                                    Veteran Program ($35.00/month)
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input text" type="radio" name="gridRadios" id="gridRadios2"
-                                    value="option2">
-                                <label class="form-check-label text" for="gridRadios2">
-                                    Masters Program ($50.00/month)
-                                </label>
-                            </div>
-                            <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                    value="option3">
-                                <label class="form-check-label text" for="gridRadios3">
-                                    Non-Veteran Adaptive ($50.00/month)
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label text" for="gridCheck1">
+                                    By checking this box I understand that I am agreeing with the waiver.
                                 </label>
                             </div>
                         </div>
                     </div>
-                </fieldset>
-                <div class="form-group row">
-                    <label for="inputPhone" class="col-sm-2 col-form-label text">Type of Disability, if
-                        applicable</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputPhone" placeholder="ex. double amputee">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-2 text">Waiver</div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label text" for="gridCheck1">
-                                By checking this box I understand that I am agreeing with the waiver.
-                            </label>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button id="submitbutton" type="submit" class="btn btn-outline-warning">Submit</button>
                         </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-outline-warning">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -134,4 +134,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/index.js"></script>
 </body>
