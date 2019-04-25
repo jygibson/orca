@@ -2,8 +2,8 @@ var db = require("../models");
 
 
 module.exports = function (app) {
-    app.post("https://localhost:3000/api/signup", function (req, res) {
-        console.log(req.body);
+    app.post("/api/signup", function (req, res) {
+        console.log("new member", req.body);
         db.Member.create({
             name: req.body.name,
             email: req.body.email,
@@ -13,7 +13,7 @@ module.exports = function (app) {
             agreement: req.body.agreement,
         })
         .then(function(dbPost){
-            res.json(dbPost);
+            res.send(dbPost);
         });
     });
 }
