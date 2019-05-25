@@ -6,20 +6,26 @@ $(document).ready(function () {
 
     function submitMember(event) {
         event.preventDefault();
-        var newMember = {
-            name: $("#name").val(),
-            email: $('#inputEmail').val(),
-            phone: $('#inputPhone').val(),
-            memberType: $('input[name=gridRadios]:checked').val(),
-            disabilityType: $('#disability').val(),
-            agreement: $('#gridCheck1').checked
-        }
-        console.log(newMember)
-        $.post("/api/signup", newMember)
-            .then(function (dbPost) {
-                console.log("new member created", dbPost)
-            })
+        if (document.getElementById("gridCheck1").checked === true) {
+            $("#successModal").modal("show");
+            var newMember = {
+                name: $("#name").val(),
+                email: $('#inputEmail').val(),
+                phone: $('#inputPhone').val(),
+                memberType: $('input[name=gridRadios]:checked').val(),
+                disabilityType: $('#disability').val(),
+                agreement: $('input[name=gridCheck1]:checked').checked,
+            }
+            console.log(newMember)
 
+            $.post("/api/signup", newMember)
+                .then(function (dbPost) {
+                    console.log("new member created", dbPost)
+                })
+
+        } else {
+            $("#failModal").modal("show");
+        };
 
     }
 })

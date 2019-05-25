@@ -4,7 +4,8 @@ module.exports = function(sequelize, DataTypes){
         email: DataTypes.STRING,
         phone: DataTypes.STRING,
         type: DataTypes.STRING,
-        disabilityType: DataTypes.STRING
+        disabilityType: DataTypes.STRING,
+        agreement: DataTypes.BOOLEAN
     });
     return Member;
 }
